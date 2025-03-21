@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Players</title>
+    <meta charset="utf-8">
+
+    <style>
+      table {
+        font-size: 1.5rem;
+      }
+
+      th {
+        font-size: 1.75rem;
+      }
+
+      tbody tr {
+        font-style: italic;
+      }
+
+      tbody tr:nth-child(1) {
+        color: red;
+      }
+
+      tbody tr:nth-child(2) {
+        color: green;
+      }
+      tbody tr:nth-child(3) {
+        color: blue;
+      }
+
+      tfoot tr {
+        font-size: 1rem;
+      }
+
+      tfoot td {
+        border-top: 1px solid gray
+      }
+
+      td {
+        text-align: center;
+      }
+
+      [scope="col"] {
+        padding: 0 10px;
+        text-decoration: underline;
+      }
+
+      [scope="row"] {
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Goals</th>
+          <th scope="col">Team</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">CR7</th>
+          <td>800</td>
+          <td>Al-Nasr</td>
+        </tr>
+  
+        <tr>
+          <th scope="row">Neymar</th>
+          <td>600</td>
+          <td>Barcelona</td>
+        </tr>
+        <tr>
+          <th scope="row">Leo</th>
+          <td>700</td>
+          <td>Man United</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>Name</td>
+          <td>Goals</td>
+          <td>Team</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
