@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Log In</title>
+    <meta charset="utf-8">
+
+    <style>
+      form {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/login" method="post">
+      <fieldset>
+        <input type="text" name="username" value="username">
+        <input type="text" name="password" value="password">
+      </fieldset>
+
+      <fieldset>
+        <input type="submit" value="Save">
+        <input type="submit" value="Forgot password" formaction="/forgot">
+      </fieldset>
+    </form>
+  </body>
+</html>
