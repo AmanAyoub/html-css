@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nutrition Facts Label</title>
+    <meta charset="utf-8">
+
+    <style>
+      html {
+        font-size: 28px;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      h1 {
+        font-family: 'Franklin Gothic Heavy', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2rem;
+        margin-top: 10px;
+        margin-bottom: 0;
+
+      }
+
+      article {
+        border: 2px solid black;
+        display: inline-block;
+        padding: 0 15px;
+        width: 680px;
+        box-sizing: border-box;
+      }
+
+      h2 {
+        border-top: 30px solid black;
+        font-size: 1rem;
+        padding: 10px 0;
+        border-bottom: 1px solid black;
+        margin: 5px 0;
+      }
+
+      article p {
+        margin: 0;
+      }
+
+      dt, dd, dl {
+        display: inline-block;
+        margin: 0;
+      }
+
+      #calories-fat {
+        margin-left: 219px;
+      }
+      hr {
+        background-color: black;
+        height: 14px;
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 9px;
+
+      }
+
+      thead th {
+        text-indent: 395px;
+        border-bottom: 1px solid black;
+      }
+
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+
+      tbody th {
+        text-align: left;
+        font-weight: normal;
+      }
+
+      tbody th dt {
+        font-weight: bold;
+      }
+
+      tbody tr td {
+        text-indent: 0;
+      }
+
+      sup {
+        font-size: smaller;
+        vertical-align: 3px;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>Nutrition Facts</h1>
+        <p>Serving Size 2/3 cup (55g)</p>
+        <p>Servings Per Container About 8</p>
+        <h2>Amount Per Serving</h2>
+  
+        <dl>
+          <dt><b>Calories</b></dt>
+          <dd>230</dd>
+        </dl>
+  
+        <dl id="calories-fat">
+          <dt>Calories from Fat</dt>
+          <dd>40</dd>
+        </dl>
+
+        <hr>
+      </header>
+
+      <table>
+
+        <thead>
+          <tr>
+            <th id="daily-value" rowspan="3" scope="col">
+              &percnt; Daily Value<sup>*</sup>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th>
+              <dl>
+                <dt>
+                  Total Fat
+                </dt>
+                <dd>8g</dd>
+              </dl>
+            </th>
+            <td>%12</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+
+        </tfoot>
+      </table>
+    </article>
+  </body>
+</html>
