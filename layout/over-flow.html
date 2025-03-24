@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Overflow</title>
+    <meta charset="utf-8">
+
+    <style>
+      div {
+        width: 700px;
+        background-color: #808080;
+        padding: 20px;
+        /* overflow: hidden; */
+        box-sizing: border-box;
+      }
+
+      div::after {
+        clear: both;
+        content: "";
+        display: block;
+      }
+
+      img {
+        width: 300px;
+      }
+
+      .cr7 {
+        float: right;
+      }
+
+      .leo {
+        float: left;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <img class="cr7" src="images/GettyImages-2167147749.webp" alt="CR7">
+      <img class="leo" src="images/lionel-messi_1.webp" alt="Leo">
+    </div>
+  </body>
+</html>
