@@ -4,26 +4,30 @@
     <title>Floats</title>
     <meta charset="utf-8">
     <style>
+      body, section, article, aside {
+        margin: 0;
+        padding: 0;
+      }
       body {
         background-color: darkolivegreen;
       }
       section {
-        width: 750px;
+        max-width: 1000px;
         background-color: gainsboro;
-        margin: 0 308px;
+        margin: 0 auto;
         overflow: hidden;
       }
 
       article {
-        width: 500px;
+        width: 70%;
         float: left;
         background-color: khaki;
       }
 
       aside {
-        width: 250px;
-        
-        float: right;
+        width: 30%;
+        overflow: hidden;
+        float: none;
         background-color: chartreuse;
       }
 
@@ -32,6 +36,13 @@
         box-sizing: border-box;
         padding: 1rem;
       }
+
+      footer {
+        background-color: cadetblue;
+        clear: both;
+        padding: 1rem;
+      }
+
     </style>
   </head>
   <body>
@@ -74,6 +85,13 @@
           publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
       </aside>
+
+      <footer>
+        If you use this site regularly and would like to help keep the site on the Internet,
+        please consider donating a small sum to help pay for the hosting and bandwidth bill.
+        There is no minimum donation, any sum is appreciated - click here to donate using PayPal.
+        Thank you for your support.
+      </footer>
     </section>
   </body>
 </html>
