@@ -21,9 +21,28 @@
         padding-top: 25px;
         position: fixed;
         top: 0;
-        right: 0;
         left: 50%;
         margin-left: -200px;
+        z-index: 2;
+        margin-top: 20px;
+      }
+
+      .invisible {
+        background-color: rgba(0, 0, 0, .6);
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1; /* 1 must be < 2 */
+      }
+
+      .little-box {
+        background-color: pink;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: -20px;
       }
     </style>
   </head>
@@ -148,6 +167,10 @@
         veniam culpa esse magna laborum aute sunt quis.
       </p>
     </section>
-    <div>I'm positioned!</div>
+    <div class="invisible"></div>
+    <div>
+      I'm positioned!
+      <div class="little-box"></div>
+    </div>
   </body>
 </html>
