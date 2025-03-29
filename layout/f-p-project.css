@@ -1,0 +1,20 @@
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+div {
+  border: 2px solid #999;
+  margin: 0 auto;
+  width: 1000px;
+  padding: 20px;
+  display: block;
+}
+
+section h1 {
+  color: #ce4a4a;
+
+}
+
+* {
+  box-sizing: border-box;
+}
